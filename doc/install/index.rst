@@ -87,6 +87,13 @@ database. In a shared hosting environment there is usually a web panel to manage
 these. If you installed the MySQL server yourself, please create a MySQL user
 and a new database.
 
+.. sourcecode:: bash
+
+    $ mysql -u root -p
+    mysql> create database mediadrop;
+    mysql> CREATE USER 'mediadrop'@'localhost' IDENTIFIED BY 'PASSWORD';
+    mysql> GRANT ALL ON mediadrop.* TO 'mediadrop'@'localhost';
+
 
 Install Location
 -----------------------------------------
